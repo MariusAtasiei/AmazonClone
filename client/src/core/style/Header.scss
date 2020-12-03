@@ -1,0 +1,77 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  &__logo {
+    width: 100px;
+    object-fit: contain; // check
+    margin: 18px 20px 0 20px;
+  }
+
+  &__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+
+    &__input {
+      height: 12px;
+      padding: 10px;
+      border: none;
+      width: 100%;
+    }
+
+    &__icon {
+      padding: 5px;
+      height: 22px !important;
+      background: #cd9042;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      text-decoration: none;
+    }
+
+    &__option {
+      display: flex;
+      flex-direction: column;
+      margin: 0 10px;
+      color: white;
+
+      &__line {
+        &-one {
+          font-size: 10px;
+        }
+
+        &-two {
+          font-size: 13px;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+
+  &__basket {
+    display: flex;
+    align-items: center;
+    color: white;
+
+    &__link {
+      text-decoration: none;
+      color: white;
+    }
+
+    &__count {
+      margin: 0 15px 0 5px;
+    }
+  }
+}
